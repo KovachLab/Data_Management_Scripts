@@ -112,7 +112,7 @@ if  [ $SourceFileAnswer == "Program" ]; then
     paste -d" " SourceMD5 SourceFileList > $SourceFilename-Formatted
     sort $SourceFilename-Formatted > $SourceFilename-Sorted-Formatted
 else
-    cut -d" " -f3 $SourceFilename > SourceFile
+    cut -d" " -f3 $SourceLocation$SourceFilename > SourceFile
     cut -d"/" -f6- SourceFile > SourceFileList
     cut -d" " -f1 $SourceFilename > SourceMD5
     paste -d" " SourceMD5 SourceFileList > $SourceFilename-Formatted
