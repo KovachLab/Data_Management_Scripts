@@ -1,6 +1,6 @@
 #!/bin/bash
 #**************************************************************#
-#Checksum Compare Script by Lindsey Fenderson February 8, 2021 #
+#Checksum Compare Script by Lindsey Fenderson February 9, 2021 #
 # Version 1.0.1.0                                              #
 #Script to calculate md5 checksums recursively for all files   #
 #  in 2 locations (such as a remote cluster and a local hard   #
