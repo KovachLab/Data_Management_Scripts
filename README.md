@@ -11,8 +11,10 @@ Repository includes:
 
 4.) rm - a simple script users can set up for themselves to generate a temporary recycle bin on Linux. If the script is invoked instead of the 'rm' command whenever you want to delete something, it will move the files to a temporary directory so they can be retrieved (for a short time) before being deleted, incase the files were deleted in error.
 
-5.) Copy2Box.sh - I (LEF) have set this script to run as a regular bi-weekly cron job to ensure all Kovach Lab data are backed up to the cloud regularly.
+5.) A copy of the cron jobs set up by LEF for monitoring and managing the lab's data and disc usage. This is an automatic scheduler for running the below scripts, as well as for emptying the group's "RecycleBin" on a weekly basis.
 
-6.) DiscUsageMonitoring.sh - I (LEF) run this script as a daily cron job to keep tabs on our cluster storage usage so I have an idea of where we're at storage-wise, if/how long we've been over-quota, how much space needs to be freed up, and generally monitor our disc space usage.
+6.) Copy2Box.sh - I (LEF) have set this script to run as a regular bi-weekly cron job to ensure all Kovach Lab data are backed up to the cloud regularly.
 
-7.) GroupDiscUsageMonitoring.sh - I (LEF) run this script twice daily; if our disc usage reaches a critical threshold (currenlty set for 104% of our quota) the entire premise-using lab starts getting twice-daily emails to encourage immediate disc cleanup so we don't run out of space or trigger a hard limit which prevents us from being able to write any new data.
+7.) DiscUsageMonitoring.sh - I (LEF) run this script as a daily cron job to keep tabs on our cluster storage usage so I have an idea of where we're at storage-wise, if/how long we've been over-quota, how much space needs to be freed up, and generally monitor our disc space usage. The script starts sending me a daily email as we approach our quota threshold.
+
+8.) GroupDiscUsageMonitoring.sh - I (LEF) run this script twice daily; if our disc usage reaches a critical threshold (currenlty set for 104% of our quota) the entire premise-using lab starts getting twice-daily emails to encourage immediate disc cleanup so we don't run out of space or trigger a hard limit which prevents us from being able to write any new data. *Requires keeping the associated 'MEL-UserEmailList' file up to date with the emails of current users in our group.
