@@ -1,0 +1,6 @@
+0 3 * * 0 rm -r /mnt/lustre/mel/shared/RecycleBin/*
+5 12 * * * /mnt/lustre/mel/leq29/Data_Management_Scripts/DiscUsageMonitoring.sh
+0 5 * * * /mnt/lustre/mel/leq29/Data_Management_Scripts/GroupDiscUsageMonitoring.sh
+0 17 * * * /mnt/lustre/mel/leq29/Data_Management_Scripts/GroupDiscUsageMonitoring.sh
+0 12 1 * * /mnt/lustre/mel/leq29/Data_Management_Scripts/Copy2Box.sh
+0 12 15 * * /mnt/lustre/mel/leq29/Data_Management_Scripts/Copy2Box.sh
